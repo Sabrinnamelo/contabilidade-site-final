@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-straight/css/uicons-thin-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css">
 </head>
 
 <body>
@@ -65,15 +66,14 @@
     </header>
 
     <main>
-        <div id="container">
-            <div id="container_header">
+
+        <div id="container_header">
+            <div id="container_header_top">
                 <h1>Tudo que sua empresa precisa para crescer!</h1>
                 <h6>Tenha um <b>especialista dedicado ao seu negócio,</b> que cuida diariamente de toda contabilidade da
                     sua empresa.</h6>
             </div>
-
-            <div class="texto_container_meio">
-
+            <div id="container_header_meio">
                 <div id="primeira_coluna_box">
                     <div class="box">
                         <i class="fi fi-tr-computer"></i>
@@ -102,31 +102,104 @@
             </div>
         </div>
 
+        <div id="container_meio_main">
+            <div id="container_meio_top">
+                <h1>FAÇA SEU ORÇAMENTO!</h1>
+                <P>Destrave a praticidade da contabilidade online e de ter um contador a sua disposição.</P>
+                <div class="btn_orcamento">
+                    <button><b>TROCAR DE CONTADOR</b></button>
+                    <button><b>ABRIR EMPRESA</b></button>
+                </div>
+            </div>
+
+            <section class="logos">
+
+                <div class="logos-slide">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+
+                    <!-- DUPLICA AS IMAGENS -->
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+                    <img src="imagens/logo_eduardo_gomes_transparente_correto.png">
+
+                </div>
+            </section>
+        </div>
+
         <div id="container_footer">
 
-           
+                <div class="titulo_container">
+                    <h1>FAÇA O MELHOR PELO SEU NEGÓCIO</h1>
+                    <p>Invista mais tempo no seu negócio, comece agora mesmo sua contabilidade online e deixe a  burocracia por nossa conta.</p>
+                </div>
+            <div id="todos_div">
+
+                <div class="div_contain">
+                    <i class="fi fi-ts-bank icon_div_tres"></i>
+                    <h2>ABRIR EMPRESA</h2>
+                </div>
+                <div class="div_contain">
+                    <i class="fi fi-ts-tax-alt icon_div_tres"></i>
+                    <h2>DECLARAÇÃO DE IMPOSTO</h2>
+                </div>
+                <div class="div_contain">
+                    <i class="fi fi-tr-document icon_div_tres"></i>
+                    <h2>REGULARIZAR CPF</h2>
+                </div>
+
+            </div>
+
         </div>
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <div id="todo_footer">
+            <div id="footer_top">
+                <img src="/imagens/logo_eduardo_gomes_branca.png" alt="logo" id="img_footer">
 
-    <script>
+                <div id="icons_redes">
+                    <a href="#"><i class="fi fi-brands-facebook icon_footer"></i></a>
+                    <a href="#"><i class="fi fi-brands-instagram icon_footer"></i></a>
+                    <a href="#"><i class="fi fi-brands-twitter icon_footer"></i></a>
+                    <a href="#"><i class="fi fi-brands-youtube icon_footer"></i></a>
+                    <a href="#"><i class="fi fi-brands-tiktok-circle icon_footer"></i></a>
+                </div>
+            </div>
 
-        const menu = document.getElementById("menu");
+            <div id="footer_links">
+                <h4>LINKS RÁPIDOS</h4>
+                <a href="#">SERVIÇOS</a>
+                <a href="#">SOBRE</a>
+                <a href="#">ABRIR CNPJ</a>
+                <a href="#">MIGRAR DE MEI para ME</a>
+                <a href="#">DECLARAR IMPOSTO</a>
 
-        window.addEventListener("scroll", () => {
+            </div>
 
-            if (window.scrollY > 50) {
-                menu.classList.add("rolando");
-            } else {
-                menu.classList.remove("rolando");
-            }
+            <div id="footer_dados">
+                <h4>LOCALIZAÇÃO</h4>
+                <p>Pariconha, Maceió-AL</p>
+                <h4>E-MAIL</h4>
+                <p>0000000@gmail.com</p>
+                <h4>TELEFONE</h4>
+                <p>(82) 9 00000-000000 </p>
 
-        });
+            </div>
+        </div>
+        <p>© 2026 EDU CONTÁBIL. Todos os direitos reservados - Desenvolvido por Sabrina.</p>
 
+    </footer>
 
-    </script>
 </body>
 
 </html>

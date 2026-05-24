@@ -208,7 +208,7 @@ main {
     padding: 50px 0px 0px 0px;
 }
 
-#container {
+#container_header {
     width: 100%;
     max-width: 1250px;
     background: #ffffff;
@@ -217,31 +217,31 @@ main {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
-#container_header {
+#container_header_top {
     text-align: center;
     margin-bottom: 60px;
 }
 
-#container_header h1 {
+#container_header_top h1 {
     font-size: 40px;
     color: #02174d;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
-#container_header h6 {
+#container_header_top h6 {
     font-size: 20px;
     font-weight: 320;
     color: #02174d;
     line-height: 1.7;
 }
 
-#container_header h6 b {
+#container_header_top h6 b {
     color: #2563eb;
 }
 
 
-.texto_container_meio {
+#container_header_meio {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,4 +286,232 @@ main {
 .box p {
     color: #64748b;
     font-size: 13px;
+}
+
+#container_meio_main,
+#container_footer {
+    width: 100%;
+}
+
+#container_meio_top {
+    width: 100%;
+    height: 300px;
+    background-color: #02174d;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#container_meio_top h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+#container_meio_top p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn_orcamento button {
+    padding: 15px;
+    background-color: #d4a92a;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 200px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+
+.btn_orcamento button:hover {
+    background-color: #b38e20;
+    transform: translateY(-2px);
+}
+
+/*scrool infinite*/
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+    /*linha horizontal*/
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #fff;
+}
+
+.logos-slide {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    animation: scrolInfinite 25s linear infinite;
+}
+
+.logos-slide img {
+    width: 140px;
+    opacity: 0.5;
+    filter: grayscale(100%);
+    /*preto e branco*/
+    transition: 0.3s;
+}
+
+.logos-slide img:hover {
+    filter: grayscale(0%);
+    /*volta a cor real*/
+    opacity: 1;
+}
+
+@keyframes scrolInfinite {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+/*FAÇA O MELHOR PELO SEU NEGÓCIO + 3 boxs*/
+#container_footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 40px;
+    background-color: #d4a92a;
+}
+
+#todos_div {
+    display: flex;
+    gap: 20px;
+}
+
+.div_contain {
+    background-color: #fff;
+    width: 290px;
+    height: 250px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon_div_tres {
+    font-size:30px;
+    color: #02174d;
+}
+
+.titulo_container h1 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.titulo_container p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div_contain h2 {
+    color: #d4a92a;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #02174d;
+    color: #FFF;
+}
+
+#todo_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ffffff22;
+}
+
+#footer_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+#img_footer {
+    width: 250px;
+    height: auto;
+}
+
+#icons_redes {
+    display: flex;
+    gap: 25px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#icons_redes a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+#footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer_links a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#footer_dados {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#footer_dados h4 {
+    color: #d4a92a;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+#footer_dados p {
+    color: #fff;
+    font-size: 15px;
+
+}
+
+footer p {
+    text-align: center;
+    padding-top: 25px;
+    color: #d1d5db;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
