@@ -12,9 +12,16 @@ body {
     background: #f5f5f5;
 }
 
-header {
+#home_header {
     width: 100%;
     height: 170vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#sobre_header {
+    width: 100%;
     position: relative;
     overflow: hidden;
     background-color: #fff;
@@ -375,6 +382,7 @@ main {
         transform: translateX(-50%);
     }
 }
+
 /*FAÇA O MELHOR PELO SEU NEGÓCIO + 3 boxs*/
 #container_footer {
     display: flex;
@@ -406,7 +414,7 @@ main {
 }
 
 .icon_div_tres {
-    font-size:30px;
+    font-size: 30px;
     color: #02174d;
 }
 
@@ -423,6 +431,7 @@ main {
     line-height: 1.0;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .div_contain h2 {
     color: #d4a92a;
     font-size: 18px;
@@ -513,4 +522,217 @@ footer p {
     color: #d1d5db;
     font-size: 14px;
     margin-bottom: 20px;
+}
+
+
+
+
+
+
+/*TELA SOBRE*/
+
+#meio_header_sobre{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: #d4a92a;
+    height: 700px;
+}
+#img_text {
+    position: relative;
+    display: inline-block; 
+}
+
+#img_text img {
+    display: block;
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto-sobreposto {
+    position: absolute;
+    
+    top: 88%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    
+    color: white; 
+    background-color: #02174d; 
+    padding: 10px;
+    border-radius: 8px;
+    width: 90%; 
+}
+
+.texto-sobreposto p {
+    margin: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text_header {
+    padding: 20px;
+    max-width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text_header h2 {
+    color: #02174d; 
+    font-size: 35px;
+    font-weight: 600; /*grossura*/
+    margin-bottom: 45px;
+  
+}
+ 
+.text_header p {
+    color: #555555; 
+    font-size: 18px;
+    font-style: italic; 
+    line-height: 1.6;
+    padding-left: 15px;
+    border-left: 2px solid #d1d5db; 
+}
+
+
+#container_sobre {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; 
+    margin-bottom: 100px;
+}
+
+#container_sobre h2 {
+    text-align: center;
+    color: #02174d;
+    margin-bottom: 18px;
+    font-size: 35px;
+}
+
+#missao_valor_visao {
+   display: flex;
+    gap: 20px;
+
+}
+
+.box_sobre {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border-top: 4px solid #02174d; 
+}
+
+.box_sobre h2 {
+    font-size: 30px !important;
+    color: #02174d !important;
+    margin-bottom: 15px;
+}
+#historia{
+    background: #fff;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+#divisao_p{
+   display: flex;
+   gap: 20px;
+}
+
+#historia p{
+    color: #555;
+    line-height: 1.9;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#trajetoria_card {
+    width: 100%;
+}
+
+.carousel_sobre {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 10px;
+    scroll-behavior: smooth;
+    /* Estilização da barra de rolagem */
+    scrollbar-width: thin;
+    scrollbar-color: #d4a92a #e0e0e0;
+}
+
+/* Barra de rolagem para Chrome, Safari e Edge */
+.carousel_sobre::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel_sobre::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+.carousel_sobre::-webkit-scrollbar-thumb {
+    background-color: #02174d;
+    border-radius: 4px;
+}
+
+/* Cards do Carrossel */
+.card_carrosel_sobre {
+    flex: 0 0 250px; /* Não deixa o card encolher, fixa em 250px */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 3px solid #d4a92a;
+}
+
+.card_carrosel_sobre h3 {
+    color: #d4a92a;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card_carrosel_sobre p {
+    font-size: 15px;
+    color: #666;
+}
+#empresario{
+    background: #fff;
+    padding: 60px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+#img_text_empresario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#empresario img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+#empresario img:hover{
+    transform: scale(1.02);
+}
+
+#empresario p{
+    flex: 1;
+    width: 400px;
+    color: #555;
+    line-height: 1.9;
+    text-align: justify;
+    font-size: 15px;
 }
