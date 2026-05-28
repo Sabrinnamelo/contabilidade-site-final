@@ -13,53 +13,71 @@
 
 <body>
     <header>
- <div id="menu">
+        <div id="menu">
             <div class="logo-cabecalho">
                 <a href="#"> <img src="/imagens/logo_eduardo_gomes_transparente_correto.png" alt=""></a>
             </div>
 
             <nav class="menu-nav">
-                <a href="index.html" class="nav-link active">Início</a>
-                <a href="pages/servicos.html" class="nav-link">Serviços</a>
-                <a href="pages/conteudo.html" class="nav-link">Informações</a>
-                <a href="pages/recursos.html" class="nav-link">Recursos</a>
-                <a href="pages/sobre.html" class="nav-link">Sobre Nós</a>
-                <a href="pages/contato.html" class="nav-link">Contato</a>
+                <a href="/index.html" class="nav-link active">Início</a>
+                <a href="/pages/servicos.html" class="nav-link">Serviços</a>
+                <a href="/pages/conteudo.html" class="nav-link">Informações</a>
+                <a href="/pages/recursos.html" class="nav-link">Recursos</a>
+                <a href="/pages/sobre.html" class="nav-link">Sobre Nós</a>
+                <a href="/pages/contato.html" class="nav-link">Contato</a>
             </nav>
-        </div>    </header>
+        </div>
+    </header>
 
     <main>
-        <div id="main_top">
+        <div id="video_caixas_servicos">
+            <div id="video_container">
 
-            <div class="primeira_coluna">
-                <div class="box_main_top"></div>
-                <div class="box_main_top"></div>
-                <div class="box_main_top"></div>
+                <video src="/imagens/download.mp4" muted loop autoplay id="video_servico"></video>
+
+                <div id="overlay_video">
+                    <h1>Transformando sua gestão financeira</h1>
+                    <p>Consultoria especializada para empresas e MEI</p>
+                    <button>ENTRAR EM CONTATO</button>
+                </div>
+
             </div>
 
-            <div class="segunda_coluna">
-                <div class="box_main_top"></div>
-                <div class="box_main_top"></div>
-                <div class="box_main_top"></div>
-            </div>
+            <div id="card_servicos">
+                <h2>SERVIÇOS PRESTADOS:</h2>
 
-            <div class="terceira_coluna">
-                <div class="box_main_top"></div>
-                <div class="box_main_top"></div>
-                <div class="box_main_top"></div>
-            </div>
+                <div id="caixas_servicos">
+                    <div class="coluna_box">
+                        <div class="box_servico">Regularização Empresarial</div>
+                        <div class="box_servico">Diagnóstico fiscal/tributário</div>
+                        <div class="box_servico">Precificação</div>
+                        <div class="box_servico">Regularização fiscal</div>
 
-            <div class="quarta_coluna">
-                <div class="box_main_top"></div>
-                <div class="box_main_top"></div>
-                <div class="box_main_top"></div>
-            </div>
+                    </div>
+                    <div class="coluna_box">
+                        <div class="box_servico">Departamento pessoal</div>
+                        <div class="box_servico">Consultoria para Simples Nacional</div>
+                        <div class="box_servico">BPO Financeiro</div>
+                        <div class="box_servico">Análise de indicadores financeiros</div>
 
+                    </div>
+                    <div class="coluna_box">
+                        <div class="box_servico">Implantação de processos financeiros</div>
+                        <div class="box_servico">Consultoria para MEI </div>
+                        <div class="box_servico">Controle e gestão de custo</div>
+                        <div class="box_servico">Consultoria para fluxo de caixa</div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        
-        <div id="main_meio"></div>
-        <div id="main_footer"> </div>
+        <div id="faixa_servico">
+            <h3>Pronto para diversificar e expandir o capita do seu <b>negócio</b> ?</h3>
+            <h6>Estamos pronto para te atender</h6>
+            <button class="btn_faixa">SAIBA MAIS</button>
+        </div>
     </main>
 
     <footer>
