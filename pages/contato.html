@@ -5,12 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Contato | EDU</title>
+    <title>Contato | EDU </title>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <div id="menu">
+            <div class="logo-cabecalho">
+                <a href="#"> <img src="/imagens/logo_eduardo_gomes_transparente_correto.png" alt=""></a>
+            </div>
+
+            <nav class="menu-nav">
+                <a href="/index.html" class="nav-link active">Início</a>
+                <a href="/pages/servicos.html" class="nav-link">Serviços</a>
+                <a href="/pages/conteudo.html" class="nav-link">Informações</a>
+                <a href="/pages/recursos.html" class="nav-link">Recursos</a>
+                <a href="/pages/sobre.html" class="nav-link">Sobre Nós</a>
+                <a href="/pages/contato.html" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main_contato">
+
+            <div id="form_left">
+
+                <div id="left_contato">
+                    <h2>Estamos quase lá!</h2>
+                    <p>Preencha o formulário e em <b class="cinco_minutos">até 5 minutos</b> entraremos em contato
+                    com você.</p>
+                    <p>Descubra como pagar menos impostos e manter sua empresa regularizada.</p>
+                </div>
+
+                <form action="post" id="form_contato">
+                    <label for="nome">Nome:</label>
+                    <input type="text">
+
+                    <label for="e-mail" name="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="celular">Celular:</label>
+                    <input type="text">
+
+                    <label for="empresa">Nome da empresa</label>
+                    <input type="text">
+
+                    <label for="colaboradores">Quantia de colaboradores:</label>
+                    <input type="number" name="colaboradores" id="colaboradores">
+
+                    <label for="cargo">Cargo atual:</label>
+                    <select name="cargo" id="cargo">
+                        <option value="estagiário">Estagiário</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="analista">Analista</option>
+                        <option value="diretor">Diretor</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="ceo">CEO</option>
+                        <option value="socio">Sócio-diretor</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <label for="regime">Regime Tributário</label>
+                    <select name="regime" id="regime">
+                        <option value="real">Lucro real</option>
+                        <option value="presumido">Lucro presumido</option>
+                        <option value="simples">Simples Nacional</option>
+                    </select>
+
+                    <button type="button">ENVIAR</button>
+                    <p>Ao enviar o formulário, eu declaro que estou de acordo com a <a href="#">Política de
+                            Privacidade</a>.
+                    </p>
+                </form>
+            </div>
+
+
+            <div id="redes_contato">
+                <div class="caixas_contato_redes">WHATSAPP</div>
+                <div class="caixas_contato_redes">INSTAGRAM</div>
+                <div class="caixas_contato_redes">FACEBOOK</div>
+                <div class="caixas_contato_redes">YOUTUBE</div>
+                <div class="caixas_contato_redes">TIKTOK</div>
+                <div class="caixas_contato_redes">LINKEDLN</div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
     <footer>
         <div id="todo_footer">
             <div id="footer_top">
