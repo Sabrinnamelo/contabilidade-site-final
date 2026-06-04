@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Recursos</title>
+
+    <script src="/js/plugins/jquery.min.js"></script>
+    <script src="/js/plugins/bxslider.min.js"></script>
+    <script src="/js/plugins/script.js"></script>
+    <link rel="stylesheet" href="/js/plugins/bxslider.css">
+
+
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    
+    <header>
+        <div id="menu">
+            <div class="logo-cabecalho">
+                <a href="#"> <img src="/imagens/logo_eduardo_gomes_transparente_correto.png" alt=""></a>
+            </div>
+
+            <nav class="menu-nav">
+                <a href="/index.html" class="nav-link active">Início</a>
+                <a href="/pages/servicos.html" class="nav-link">Serviços</a>
+                <a href="/pages/conteudo.html" class="nav-link">Informações</a>
+                <a href="/pages/recursos.html" class="nav-link">Recursos</a>
+                <a href="/pages/sobre.html" class="nav-link">Sobre Nós</a>
+                <a href="/pages/contato.html" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="main_recursos">
+            <div class="container_carrosel_recursos" id="banners">
+                <ul>
+                    <li><img src="/imagens/calculadora clt x pj (1).png"></li>
+                    <li><img src="/imagens/cnae.png"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="calculadora">
+            <div id="formulario_calculo">
+                <h1> Preencha com seus dados para calcular</h1>
+
+                <form action="#" id="form_calc_recurs">
+                    <div class="coluna_form_recursos">
+                        <input type="name" placeholder="NOME">
+                        <input type="email" name="" id="" placeholder="E-MAIL">
+                        <input type="text" placeholder="PROFISSÃO">
+                    </div>
+
+                    <div class="coluna_form_recursos">
+                        <input type="name" placeholder="BENEFÍCIOS">
+                        <input type="email" name="" id="" placeholder="TELEFONE">
+                        <input type="text" placeholder="SALÁRIO BRUTO MENSAL">
+                    </div>
+
+                    <button type="button">VER RESULTADO</button>
+
+                    <p>Ao clicar em "Ver Resultado", você está ciente e concorda com a nossa Política de Privacidade,
+                        de Cookies e nossos Termos de Uso.
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+        <div id="diferenca_pj_clt">
+
+            <h1>Principais diferenças entre PJ e CLT</h1>
+            <P>A principal diferença entre CLT e PJ está nos direitos trabalhistas. O trabalhador CLT possui benefícios
+                como FGTS, 13º salário, férias e INSS, mas recebe um salário líquido menor devido aos descontos. Já o
+                profissional PJ recebe uma remuneração maior, porém não tem esses benefícios, precisa pagar seus
+                próprios impostos, abrir uma empresa e trabalha por meio de um contrato de prestação de serviços,
+                geralmente com maior flexibilidade de horários.
+            </P>
+
+            <div id="dois_cards_clt_pj">
+                <div class="clt_pj-card">
+                    <img src="/imagens/card PJ.png" alt="">
+                    <ul>
+                        <li>O acordo é firmado em um contrato de prestação de serviço, sem vínculo empregatício.</li>
+                        <li>Direitos e deveres diferentes dos previstos na CLT.</li>
+                        <li>É necessário abrir uma empresa para trabalhar como PJ.</li>
+                        <li>Possui uma rotina mais flexível, podendo estipular seus horários de acordo com o contrato.
+                        </li>
+                    </ul>
+                </div>
+                <div class="clt_pj-card">
+                    <img src="/imagens/cardclt.png" alt="">
+                    <ul>
+                        <li>Possui vínculo empregatício, formalizado com a assinatura na carteira de trabalho.</li>
+                        <li>Para iniciar o trabalho é necessário a entrega de documentos e a realização do exame
+                            admissional.</li>
+                        <li>O profissional CLT precisa cumprir a jornada de trabalho prevista na Lei.</li>
+                        <li>Tem direito aos benefícios conforme as regras previstas na CLT.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <footer>
         <div id="todo_footer">
             <div id="footer_top">
@@ -48,4 +144,5 @@
 
     </footer>
 </body>
+
 </html>
