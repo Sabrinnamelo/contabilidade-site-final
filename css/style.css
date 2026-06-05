@@ -1139,15 +1139,11 @@ footer p {
 }
 
 /* Frente */
-.card-front {
-    background-color: #d4a92a;
-
-}
 
 .card-front img {
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.5;
     object-fit: cover;
 }
 
@@ -1342,9 +1338,10 @@ footer p {
 }
 
 
-.politica_conteudo{
+.politica_conteudo {
     color: #fff;
 }
+
 .container_fiquePorDentro button {
     align-self: center;
     padding: 14px 40px;
@@ -1375,8 +1372,11 @@ footer p {
 /*RECURSOS*/
 
 .container_carrosel_recursos {
-    margin-top: 50px;
+    margin-top: 90px;
+    max-width: 950px;
+    height: 500px;
 }
+
 #calculadora {
     width: 100%;
     height: 550px;
@@ -1397,20 +1397,23 @@ footer p {
     padding: 90px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-#formulario_calculo h1{
+
+#formulario_calculo h1 {
     text-transform: uppercase;
     color: #02174d;
     text-align: center;
     margin-bottom: 30px;
 }
-#form_calc_recurs{
+
+#form_calc_recurs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-#form_calc_recurs input{
+
+#form_calc_recurs input {
     width: 250px;
     padding: 10px;
     border: none;
@@ -1419,6 +1422,7 @@ footer p {
     border-bottom: 1px solid #d4a92a;
     margin-left: 10px;
 }
+
 #form_calc_recurs button {
     align-self: center;
     padding: 14px 40px;
@@ -1436,7 +1440,8 @@ footer p {
     background-color: #02174d;
     color: #d4a92a;
 }
-#form_calc_recurs p{
+
+#form_calc_recurs p {
     color: #02174d;
     font-size: 12px;
 }
@@ -1446,7 +1451,7 @@ footer p {
     text-align: center;
     background-color: #fff;
     padding-bottom: 90px;
-    padding:100px;
+    padding: 100px;
 }
 
 #diferenca_pj_clt h1 {
@@ -1464,20 +1469,24 @@ footer p {
     margin: 0 auto 50px;
     text-align: justify;
 }
+
 #dois_cards_clt_pj {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+
 .clt_pj-card {
     background: #fff;
     width: 500px;
     border-radius: 15px;
-    overflow: hidden; /*qualquer conteúdo que "saia" das bordas do card seja cortado e não fique visível.*/
+    overflow: hidden;
+    /*qualquer conteúdo que "saia" das bordas do card seja cortado e não fique visível.*/
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
     padding-bottom: 20px;
 }
+
 .clt_pj-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
@@ -1488,16 +1497,17 @@ footer p {
     text-align: left;
     margin-left: 20px;
 }
+
 .clt_pj-card li {
     margin-bottom: 15px;
     color: #444;
     line-height: 1.6;
-    
+
     position: relative;
     padding-left: 10px;
-    
+
 }
+
 .clt_pj-card li::marker {
     color: #d4a92a;
 }
-
